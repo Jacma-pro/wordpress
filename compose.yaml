@@ -11,13 +11,13 @@ services:
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
-      - wordpress:/var/www/html
+      - wordpress:/varwww/html
 
   db:
     image: mysql:8.0
     restart: always
     ports:
-      - 3307:3306
+      - 3306:3306
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
